@@ -39,15 +39,19 @@
 %indicator for the final version
 %N.B. Use \finaltrue for dissertation publication, and use \finalfalse for the proposal and defense
 \newif\iffinal
-\finaltrue %to set final marker as true -> final
-%\finalfalse %set final marker as false -> draft
+%\finaltrue %to set final marker as true -> final
+\finalfalse %set final marker as false -> draft
 
 \iffinal
-	\documentclass[doctor,english,final,pdfdoc]{kaist-ucs}
+	\documentclass[doctor,english,final,pdfdoc]{kaist-ucs-improved}
 	\usepackage{lmodern} %This suppresses font size warnings in final version
 \else
-	\documentclass[doctor,english,draft,pdfdoc]{kaist-ucs}
+	\documentclass[doctor,english,draft,pdfdoc]{kaist-ucs-improved}
 \fi
+
+%Enable numbering upto subsubsection
+%Increase the number to enable numbering for lower levels: e.g. \paragraph and \subparagraph
+\setcounter{secnumdepth}{3}
 
 % If you want make pdf document (include bookmark, colorlink)
 %\documentclass[doctor,english,final,pdfdoc]{kaist-ucs}
@@ -184,6 +188,7 @@
     % 가, 나, 다
     %\end{Korkeyword}
 
+		%Locate abstract in a separate file
 		\input{sections/abstract}
 
     \addtocounter{pagemarker}{1}                 % 백색별지분을 고려
@@ -211,8 +216,10 @@
 %% 최상위 분류 단위가 됩니다.
 %% You cannot use 'part'
 
+		%Chapters in separate files
 		\input{sections/introduction}
-		\input{sections/general-background}
+		\input{sections/chapter1/numbered-chapter}
+		\input{sections/chapter2/another-numbered-chapter}
 		\input{sections/conclusion}
 
 

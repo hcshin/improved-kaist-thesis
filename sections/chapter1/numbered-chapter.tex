@@ -1,0 +1,21 @@
+\chapter{Chapter with number}
+\section{그림과 표를 본문에서 이야기하기}
+
+본문에서 그림과 표에 관해 이야기를 할 때도 인용에서처럼 하시면 됩니다.
+
+%% Table in a separate file
+\input{tables/example-table} %Path viewed from top directory
+
+
+%%
+%% 그림 삽입 예시
+%% Example. how to insert graph
+%%
+%% Note. 가급적 \includegraphics 명령을 사용하십시오.
+%% Recommen : Use \includegraphics to insert graph.
+%%
+\begin{figure}[t]
+    \centerline{\includegraphics[width=12.5cm]{figures/sample-fig1}} %Path viewed from top directory
+    \caption[캡션제목 넣으십시오]{그림 제목을 넣으십시오.
+    } \label{mag-fig1}
+\end{figure}

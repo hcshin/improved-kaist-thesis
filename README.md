@@ -26,4 +26,4 @@ Compile main.tex as usual.
 ## Compilation Test Info.
 Compilation tested in/with:
 * Ubuntu 16.04
-* vim-latex + texlive-full package (pdfTeX 3.14159265-2.6-1.40.16)
+* vim-latex + texlive-full package (pdfTeX 3.14159265-2.6-1.40.16, BibTex 0.99d)
