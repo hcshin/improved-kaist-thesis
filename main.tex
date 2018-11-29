@@ -53,6 +53,9 @@
 %Increase the number to enable numbering for lower levels: e.g. \paragraph and \subparagraph
 \setcounter{secnumdepth}{3}
 
+%Line breaking for long URL's (line is broken also by '-')
+\def\UrlBreaks{\do\/\do-\do\_}
+
 % If you want make pdf document (include bookmark, colorlink)
 %\documentclass[doctor,english,final,pdfdoc]{kaist-ucs}
 
@@ -231,7 +234,7 @@
 %Bibliography
 {\footnotesize
 	\bibliographystyle{splncs03}
-	\bibliography{references/refGeneral}
+	\bibliography{references/refGeneral,references/reference2} %Separate multiple *.bib files with commas
 }
 
 %%
