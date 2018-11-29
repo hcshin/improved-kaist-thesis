@@ -17,8 +17,13 @@ With above problems solved, the draft mode can be conveniently used for producin
 * Added BibTeX support.
 * Distributed contents into multiple *.tex files.
 * No compilation warnings in the original format.
+
+## How to Use
+Compile main.tex as usual.
+* To compile in draft mode: in "main.tex", comment out the line with "\finaltrue" and make the line with "\finalfalse" take effet.
+* To compile in final mode: in "main.tex", comment out the line with "\finalflase" and make the line with "\finaltrue" take effet.
  
 ## Compilation Test Info.
 Compilation tested in/with:
 * Ubuntu 16.04
-* vim-latex + texlive-full package installed (pdfTeX 3.14159265-2.6-1.40.16)
+* vim-latex + texlive-full package (pdfTeX 3.14159265-2.6-1.40.16)
