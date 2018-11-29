@@ -1,0 +1,46 @@
+\curriculumvitae[3]
+		% @environment personaldata 개인정보
+		% @command     name         이름
+		%              dateofbirth  생년월일
+		%              birthplace   출생지
+		%              domicile     본적지
+		%              address      주소지
+		%              email        E-mail 주소
+		% - 위 6개의 기본 필드 중에 이력서에 적고 싶은 정보를 입력
+		% input data only you want
+		\begin{personaldata}
+				\name       {안 진 현}
+				\dateofbirth{199x}{x}{xx}
+				\birthplace {...}
+				\address    { ...}
+		 \end{personaldata}
+
+		% @environment education 학력
+		% @options [default: (none)] - 수학기간을 입력
+		\begin{education}
+				\item[2007. 3.\ --\ 2009. 2.] 고등학교 (2년 수료)
+				\item[2009. 2.\ --\ 2013. 8.] 한국과학기술원 수리과학과 (학사)
+				\item[2013. 9.\ --\ 2016. 2.] 한국과학기술원 수리과학과 (석사)
+		\end{education}
+
+		% @environment career 경력
+		% @options [default: (none)] - 해당기간을 입력
+		\begin{career}
+				\item[2013. 9.\ --\ 2016. 2.] 한국과학기술원 수리과학과 일반조교
+		\end{career}
+
+		% @environment activity 학회활동
+		% @options [default: (none)] - 활동내용을 입력
+%%    \begin{activity}
+%%        \item J. Choi, \textbf{Yong-Hyun Kim}, K.J. Chang, and D. Tomanek,
+%%             \textit{Occurrence of itinerant ferromagnetism in C/BN superlattice
+%%             nanotubes}, 5th Asian Workshop on First-Principles Electronic
+%%             Structure Calculations, Seoul (Korea), October., 2002.
+%%    \end{activity}
+%% 학회활동을 쓰고싶으시면, 이 문서와 클래스 문서의 학회활동 부분을 사용하십시오.
+
+		% @environment publication 연구업적
+		% @options [default: (none)] - 출판내용을 입력
+		\begin{publication}
+				\item J. Ahn, \textit{Analysis of Tail Probability of Interference at a Node in 2-dimensional Homogeneous Poisson Point Process}, Master Thesis, Korea Adv. Inst. Science, Techn., Daejeon, Republic of Korea, 2016.
+		\end{publication}
