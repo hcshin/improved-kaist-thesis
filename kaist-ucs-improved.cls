@@ -1656,9 +1656,9 @@ pdfpagelabels, %HOCHEOL MODIFIED
 			\pagenumbering{roman}                         % roman 페이지번호로 복원
 			\setcounter{page}{\value{pagemarker}}         % pagemarker에 저장된 값으로
 			\if@PDFdoc\phantomsection\fi\addcontentsline{toc}{content}{\listfigurename}% 목차(TOC)에 추가
-			\label{paperlastromanpagelabel}     % <-- 추가 부분: 마지막 페이지 위치 지정
 			\@starttoc{lof}%
 			\if@restonecol\twocolumn\fi
+			\label{paperlastromanpagelabel}     % <-- 추가 부분: 마지막 페이지 위치 지정
 			\newpage \setcounter{pagemarker}{\value{page}}% pagemarker에 다시 저장
 			\pagenumbering{arabic}                        % arabic 페이지번호로 재시작
 		}
